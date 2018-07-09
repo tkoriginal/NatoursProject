@@ -1,0 +1,21 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkoriginal/tourismSitewithAdvancedCSS.git"
+  },
+  "author": "Tauqueer Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkoriginal/tourismSitewithAdvancedCSS/issues"
+  },
+  "homepage": "https://github.com/tkoriginal/tourismSitewithAdvancedCSS#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
