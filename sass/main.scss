@@ -1,15 +1,15 @@
 @import "abstract/functions";
 @import "abstract/mixins";
-@import "abstract/variables";
+@import "abstract/variables"; //carries all the SCSS variables
 
-@import "base/base";
-@import "base/animation";
-@import "base/typography";
+@import "base/base"; //carries all the rules such as global selectors and setup of rem font size
+@import "base/animation"; //carries all the animations required
+@import "base/typography"; //carries all the font related information
 @import "base/utilities";
 
-@import "compenents/button";
+@import "compenents/button"; //carries specific components
 
-@import "layout/header";
+@import "layout/header"; //carries layout specific styles..this is for the header specifically
 
 @import "pages/home";
 
