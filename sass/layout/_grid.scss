@@ -1,6 +1,43 @@
 .row{
-    max-width: 114rem;
+    max-width: $grid-width;
     background-color: #eee;
     margin: 0 auto;
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    [class^="col-"]{   //^ mean starts with * mean contains and $ means ends with...This is an attribute selector
+        background-color: orangered;
+        float:left;
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2{
+        width: calc((100% - #{$gutter-horizontal}) / 2); //allows for calculations where you can mix units...not like Sass operations
+    }
+
+    .col-1-of-3{
+        width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+    }
+
+    .col-1-of-4{
+        width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
+    }
+
+    .col-2-of-3{
+        width: calc((100% - (#{$gutter-horizontal} * 2)) / 3 * 2 + #{$gutter-horizontal});
+    }
+
+    .col-2-of-4{
+        width: calc((100% - (#{$gutter-horizontal} * 3)) / 4 * 2 + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4{
+        width: calc((100% - (#{$gutter-horizontal} * 3)) / 4 * 3 + #{$gutter-horizontal} *2);
+    }
 }
 
