@@ -21,6 +21,8 @@
             background-color: $color-white;
         } 
 
+        }
+
         &--back{
             background-color: green;
             transform: rotateY(180deg);
@@ -29,7 +31,6 @@
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
             }
         }
-    }
     
 
     &:hover &__side--front{
