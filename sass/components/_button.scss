@@ -37,6 +37,13 @@
             background-color: $color-white;
         }
     }
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        &::after{
+            background-color: $color-white;
+        }
+    }
     
     &::after{                  /* considered child of the btn element */
         content:"";
