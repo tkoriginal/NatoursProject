@@ -1,4 +1,5 @@
 .btn{
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -11,8 +12,13 @@
         /* transition property should be in the initial state */
         position: relative;
         font-size: 1.6rem;
+
+        //change for the <button> element;
+        border: none;
+        cursor: pointer;
     }
-    &:hover {
+    &:hover 
+        {
         -webkit-transform: translateY(-3px);
         transform: translateY(-3px);
         -webkit-box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
@@ -23,11 +29,13 @@
         }
     }
     
-    &:active {
+    &:active,
+    &:focus {
         -webkit-transform: translateY(-1px);
         transform: translateY(-1px);
         -webkit-box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
         box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+        outline: none;
     }
     
     &--white {
