@@ -6,9 +6,25 @@
 }
 
 html{
-    font-size: 62.5%; //defines what 1rem is
+    font-size: 62.5%; //defines what 1rem is. 1 rem = 10px; 10/16px = 62.5%
+
+    @include respond(big-desktop){
+        font-size: 75%; //If we want 1rem = 12px, so we do 12/16px
+    }
+    @include respond(tab-land){
+        font-size: 56.25%; //If we want 1rem = 9px, so we do 9/16px 
+    }
+    @include respond(tab-port){
+        font-size: 50%; //If we want 1rem = 8px, so we do 8/16px 
+    }
+    
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-land){
+        padding: 0;
+    }
 }
