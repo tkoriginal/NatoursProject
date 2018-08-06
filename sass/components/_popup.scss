@@ -9,7 +9,13 @@
     opacity:0;
     visibility: hidden;
     transition: all .3s;
-    
+
+   
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)){
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black,0.3);
+    }
     &__content{
         @include center__element;
         width: 75%;
@@ -31,7 +37,7 @@
         width: 33.333%;
         display: table-cell;
         vertical-align: middle;
-        @include respond(phone){
+        @include respond(tab-port){
             width: 0%
         }
     }
@@ -41,16 +47,19 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
-        @include respond(phone){
+        @include respond(tab-port){
             width:100%;
             display: block;
+        }
+        @include respond(tab-land){
+            padding: 0 3rem;
         }
     }
 
     &__img{
         display: block;
         width: 100%;
-        @include respond(phone){
+        @include respond(tab-port){
             display:none;
         }
     }
@@ -62,8 +71,11 @@
         column-gap: 4rem;
         column-rule: 1px solid $color-grey-light-2;
         hyphens: auto;
-        @include respond(phone){
+        @include respond(tab-port){
             column-count: 1;
+            margin-bottom: 2rem;
+        }
+        @include respond(tab-land){
             margin-bottom: 2rem;
         }
     }
