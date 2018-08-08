@@ -1214,7 +1214,7 @@ body {
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.51em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.51em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801)), url(../img/hero.jpg); } }
-  @media only screen and (max-width: 56.25em), only screen and (hover: hover) {
+  @media only screen and (hover: hover) {
     .header {
       background-attachment: fixed; } }
   @media only screen and (max-width: 56.25em) {
